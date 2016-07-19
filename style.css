@@ -1,8 +1,9 @@
 
 body {
-	font-family: 'Metrophobic', Arial, sans-serif 40px; 
+	font-family: Arial, sans-serif 40px; 
 	margin: 10px;
-	background: white;
+	background: yellow;
+  opacity: 0.2
 	z-index: 2
 }
 
@@ -10,11 +11,36 @@ body {
 .pokemon {
 height: 400px;
     width: 300px;
-	background: url('images/yellow.jpg');
+	background: url('https://github.com/iskornev/workshop5/blob/gh-pages/Images/yellow.jpg?raw=true');
 	z-index: 1;
-	background-size: 450px
+	background-size: 450px;
+  border:1px solid yellow;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;  
 
 }
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid yellow;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 @media screen and (max-width: 1204px){
 .one {
@@ -23,8 +49,9 @@ height: 400px;
 }
 
 .pokemon {
-	background: url('images/01.jpg');
-background-size: 250px
+	background: url('https://github.com/iskornev/workshop5/blob/gh-pages/Images/01.jpg?raw=true');
+background-size: 390px;
+margin-left: 100px
 }
 }
 @media screen and (max-width: 768px) {
@@ -33,7 +60,7 @@ background-size: 250px
   }
 
   .pokemon {
-  	background: url('images/pokemon1.jpg');
+  	background: url('https://github.com/iskornev/workshop5/blob/gh-pages/Images/pokemon1.jpg?raw=true');
   	background-size: 250px
   }
 }
@@ -44,34 +71,37 @@ background-size: 250px
   }
 
   .pokemon {
-  	background: url('images/green.jpg');
+  	background: url('https://github.com/iskornev/workshop5/blob/gh-pages/Images/green.jpg?raw=true');
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .four {
   	display: none;
   }
 
   .pokemon {
-  	background: url('images/01.jpg');
-  	background-size: 250px
+  	background: url('https://github.com/iskornev/workshop5/blob/gh-pages/Images/01.jpg?raw=true');
+  	background-size: 300px;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%)
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   .five {
   	display: none;
   }
 
   .pokemon {
-  	background: url('images/01.jpg');
-  	background-size: 150px
+  	background: url('https://github.com/iskornev/workshop5/blob/gh-pages/Images/yellowhappy.jpg?raw=true');
+  	background-size: 250px;
+
+    -webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+    filter: blur(5px);
+    
   }
 
-.div{
-	display: block;
-	color: red;
-	margin: 10px
+
 }
 
 
-}
+
